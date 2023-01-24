@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Список фильмов</title>
+</head>
+
+<body>
+<main>
+
+<h1> {{len_list}} фильмов {{len_list}}</h1>
+{% for movie in movie_list %}
+  <p> <h4>Название фильма:</h4> {{movie['title']}}</p>
+  <p> <h4>Год выпуска:</h4> {{movie['release_year']}}</p>
+  <p> <h4>Описание:</h4> {{movie['description']}}</p>
+  <p> <h4>Страна производства:</h4> {{movie['country']}}</p> <br><hr>
+
+
+
+{% endfor %}
+
+</main>
+</body>
+</html>
